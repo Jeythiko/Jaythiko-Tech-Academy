@@ -1,0 +1,147 @@
+body{
+  margin:0;
+  font-family:Arial;
+   background:white;
+  color:black;
+
+  transition:0.3s;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:20px;
+
+  background:rgb(9, 4, 40);
+
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+
+.logo{
+  margin:0;
+}
+
+
+/* DESKTOP LINKS */
+
+.nav-links{
+  display:flex;
+  gap:20px;
+}
+
+
+/* HAMBURGER */
+
+.menu-btn{
+  display:none;
+  color: white;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* MOBILE MENU */
+
+.mobile-menu{
+  display:none;
+
+  flex-direction:column;
+
+  background:#050f2d;
+
+  padding:20px;
+}
+
+.mobile-menu a{
+  text-decoration:none;
+  color:rgb(232, 240, 243);
+
+  padding:15px 0;
+}
+
+/* SHOW MOBILE MENU */
+
+.show{
+  display:flex;
+}
+
+@media (max-width:768px){
+
+  /* HIDE DESKTOP LINKS */
+  .nav-links{
+    display:none;
+  }
+
+  /* SHOW HAMBURGER */
+  .menu-btn{
+    display:block;
+  }
+  img{
+    height: 250px;
+    max-width:100%;
+}
+.nav-links a{
+  text-decoration:none;
+  color:rgb(235, 241, 242);
+  font-size:18px;
+}
+h1{
+    background: linear-gradient(135deg, #dbd9d0, #2509df, #c109a5);
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX('50%');
+    font-size: 22px;
+}
+}
+@media (min-width: 1201px) {
+img{
+    height: 610px;
+    max-width:100%;
+}
+.nav-links a{
+  text-decoration:none;
+  color:rgb(235, 241, 242);
+  font-size:25px;
+}
+h1{
+    background: linear-gradient(135deg, #dbd9d0, #2509df, #c109a5);
+     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX('50%');
+    font-size: 30px;
+}
+}
+button{
+  padding: 5px 10px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* CONTENT */
+
+.content{
+  padding:20px;
+}
+
+/* DARK MODE */
+.dark{
+  background:#111827;
+  color:white;
+}
+
+.dark .navbar{
+  background:#1f2937;
+}
+
+.dark button{
+  background:#374151;
+  color:white;
+}
